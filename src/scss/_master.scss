@@ -1,0 +1,199 @@
+header {
+  background: $blue-light;
+  font-size: $title;
+  a {
+    display: block;
+    color: $blue-deep;
+    line-height: 3;
+    border-bottom: 5px solid transparent;
+    text-align: center;
+    transition: .3s ease;
+    &:hover, &:focus {
+      color: white;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      flex-basis: 25%;
+      &.active {
+        a {
+          border-color: $blue-deep;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.add-task-block {
+  margin: 20px 0;
+  border: 2px solid $gray;
+  border-radius: 10px;
+  background: white;
+  &.open {
+    border: 0;
+    .outer {
+      background: $gray-light2;
+      border: 2px solid transparent;
+    }
+    .funcs {
+      display: block;
+    }
+    .fa-plus {
+      display: none;
+    }
+    .checkbox {
+      display: block;
+    }
+  }
+  .outer {
+    border: 0;
+  }
+  .checkbox {
+    display: none;
+  }
+  .fa-plus {
+    margin-right: 15px;
+    color: $gray;
+  }
+  .outer {
+    background: transparent;
+  }
+  .funcs {
+    display: none;
+  }
+}
+
+.task-input-block {
+  display: none;
+  background: $gray-light2;
+  border-radius: 5px;
+}
+
+.list-tasks-block {
+  margin-top: 2em;
+  li {
+    margin-bottom: 1em;
+  }
+}
+
+.open {
+  box-shadow: 0 2px 2px 2px rgba(0,0,0,.2);
+  border-radius: 10px;
+  .outer {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .inner {
+    display: block;
+  }
+}
+
+.outer {
+  border-radius: 10px;
+  background: $gray-light2;
+  padding: 20px;
+  .pri {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $title;
+    .inputs {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      input {
+        width: 100%;
+        border: 0;
+        background: transparent;
+        outline: 0;
+      }
+    }
+    .funcs {
+      a {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      .major {
+        &:hover {
+          color: $yellow-deep;
+        }
+      }
+    }
+  }
+  .sub {
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+    margin-top: 10px;
+    .calendar {
+      margin-right: 15px;
+      svg {
+        margin-right: 5px;
+      }
+    }
+    svg {
+      margin-right: 15px;
+    }
+  }
+  .checkbox {
+    margin-right: 15px;
+  }
+}
+.inner {
+  display: none;
+  position: relative;
+  padding: 20px 60px 80px 88px;
+  background: $gray-light2;
+  border-top: 3px solid $gray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  li {
+    margin-bottom: 15px;
+  }
+  .input-title {
+    display: flex;
+    align-items: center;
+    font-size: $subtitle;
+    line-height: 2.5;
+    margin-left: -28px;
+    svg {
+      margin-right: 10px;
+    }
+  }
+  .btn-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.completed {
+  .title {
+    color: $gray;
+    text-decoration: line-through;
+  }
+}
+
+.important {
+  .outer {
+    background-color: $yellow-light;
+  }
+  .fa-star {
+    color: $yellow-deep;
+  }
+}
+
+.remaining-tasks,
+.completed-tasks {
+  color: $gray;
+  font-size: $title;
+  margin-left: 25px;
+}
+
+.completed-tasks {
+  display: none;
+}

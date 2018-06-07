@@ -1,9 +1,26 @@
-$font-family: "微軟正黑體", "新細明體", Arial, Helvetica, sans-serif;
+$font-family: "Roboto-Medium", "微軟正黑體", "新細明體", Arial, Helvetica, sans-serif;
 
 $image-path: '../images/';
 
+$blue-light: #4a90e2;
+$blue-deep: #00408b;
+$red: #d0021b;
+$yellow-light: #fff2dc;
+$yellow-deep: #f5a623;
+$gray-light2: #f2f2f2;
+$gray-light: #e1e1e1;
+$gray: #c8c8c8;
+$gray-deep: #757575;
+
+$title: 24px;
+$subtitle: 20px;
+$p: 16px;
+$remark: 16px;
+$placeholder: 16px;
+$status: 24px;
+
 // Max breakpoint
-$pcrwd-breakpoint: 1024;
+$pcrwd-breakpoint: 620;
 
 // Function
 @function vw($target) {
@@ -19,4 +36,3 @@ $mblrwd-breakpoint: 768;
   $vw-context: ($mblrwd-breakpoint * .01) * 1px; // 1% viewport width
   @return ($target/$vw-context) * 1vw;
 }
- 

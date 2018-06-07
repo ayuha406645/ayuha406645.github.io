@@ -1,4 +1,323 @@
 extends _layout.pug
 
 block content
+  header
+    .container
+      ul
+        li.active
+          a(href="#") My Tasks
+        li
+          a(href="#") In Progress
+        li
+          a(href="#") Completed
   .container
+    section.add-task-block
+      .outer
+        .pri
+          .inputs
+            i.fas.fa-plus
+            label.checkbox
+              input#check_complete(type="checkbox", name="check_complete")
+              span
+            input.add-task-input(type="text", placeholder="Add Task")
+          .funcs
+            a.major(href="#")
+              i.far.fa-star
+            a.edit(href="#")
+              i.fas.fa-pencil-alt
+      .inner
+        .task-detail
+          ul
+            li
+              .input-title
+                i.far.fa-calendar-alt
+                p.subtitle Deadline
+              .inputs
+                input#date_date(type="date", name="date_date")
+                input#date_time(type="time", name="date_time")
+            li
+              .input-title
+                i.far.fa-file
+                p.subtitle File
+              .inputs
+                label.file
+                  span
+                    i.fas.fa-plus
+                  input#file(type="file", name="file")
+            li
+              .input-title
+                i.far.fa-comment-dots
+                p.subtitle Comment
+              .inputs
+                textarea#comments(name="comments", placeholder="Type your memo here...")
+        .btn-block
+          button.cancel(type="reset")
+            i.fas.fa-times
+            | Cancel
+          button.submit(type="submit")
+            i.fas.fa-plus
+            | Add Task
+
+    .list-tasks-block
+      ul
+        li.important
+          .outer
+            .pri
+              .inputs
+                label.checkbox
+                  input#check_complete(type="checkbox", name="check_complete")
+                  span
+                p.edit-title.title Type Something Here...
+              .funcs
+                a.completed(href="#")
+                  i.fas.fa-star
+                a.edit(href="#")
+                  i.fas.fa-pencil-alt
+            .sub
+              .calendar
+                i.far.fa-calendar-alt
+                | 5/18
+              i.far.fa-file
+              i.far.fa-comment-dots
+          .inner
+            .task-detail
+              ul
+                li
+                  .input-title
+                    i.far.fa-calendar-alt
+                    p.subtitle Deadline
+                  .inputs
+                    input#date_date(type="date", name="date_date")
+                    input#date_time(type="time", name="date_time")
+                li
+                  .input-title
+                    i.far.fa-file
+                    p.subtitle File
+                  .inputs
+                    label.file
+                      span
+                        i.fas.fa-plus
+                      input#file(type="file", name="file")
+                li
+                  .input-title
+                    i.far.fa-comment-dots
+                    p.subtitle Comment
+                  .inputs
+                    textarea#comments(name="comments", placeholder="Type your memo here...")
+            .btn-block
+              button.cancel(type="reset")
+                i.fas.fa-times
+                | Cancel
+              button.submit(type="submit")
+                i.fas.fa-plus
+                | Save
+        li.important
+          .outer
+            .pri
+              .inputs
+                label.checkbox
+                  input#check_complete(type="checkbox", name="check_complete")
+                  span
+                p.edit-title.title Type Something Here...
+              .funcs
+                a.completed(href="#")
+                  i.fas.fa-star
+                a.edit(href="#")
+                  i.fas.fa-pencil-alt
+            .sub
+              .calendar
+                i.far.fa-calendar-alt
+                | 5/18
+              i.far.fa-file
+              i.far.fa-comment-dots
+          .inner
+            .task-detail
+              ul
+                li
+                  .input-title
+                    i.far.fa-calendar-alt
+                    p.subtitle Deadline
+                  .inputs
+                    input#date_date(type="date", name="date_date")
+                    input#date_time(type="time", name="date_time")
+                li
+                  .input-title
+                    i.far.fa-file
+                    p.subtitle File
+                  .inputs
+                    label.file
+                      span
+                        i.fas.fa-plus
+                      input#file(type="file", name="file")
+                li
+                  .input-title
+                    i.far.fa-comment-dots
+                    p.subtitle Comment
+                  .inputs
+                    textarea#comments(name="comments", placeholder="Type your memo here...")
+            .btn-block
+              button.cancel(type="reset")
+                i.fas.fa-times
+                | Cancel
+              button.submit(type="submit")
+                i.fas.fa-plus
+                | Save
+        li
+          .outer
+            .pri
+              .inputs
+                label.checkbox
+                  input#check_complete(type="checkbox", name="check_complete")
+                  span
+                p.edit-title.title Type Something Here...
+              .funcs
+                a.completed(href="#")
+                  i.far.fa-star
+                a.edit(href="#")
+                  i.fas.fa-pencil-alt
+            .sub
+              .calendar
+                i.far.fa-calendar-alt
+                | 5/18
+              i.far.fa-file
+              i.far.fa-comment-dots
+          .inner
+            .task-detail
+              ul
+                li
+                  .input-title
+                    i.far.fa-calendar-alt
+                    p.subtitle Deadline
+                  .inputs
+                    input#date_date(type="date", name="date_date")
+                    input#date_time(type="time", name="date_time")
+                li
+                  .input-title
+                    i.far.fa-file
+                    p.subtitle File
+                  .inputs
+                    label.file
+                      span
+                        i.fas.fa-plus
+                      input#file(type="file", name="file")
+                li
+                  .input-title
+                    i.far.fa-comment-dots
+                    p.subtitle Comment
+                  .inputs
+                    textarea#comments(name="comments", placeholder="Type your memo here...")
+            .btn-block
+              button.cancel(type="reset")
+                i.fas.fa-times
+                | Cancel
+              button.submit(type="submit")
+                i.fas.fa-plus
+                | Save
+        li
+          .outer
+            .pri
+              .inputs
+                label.checkbox
+                  input#check_complete(type="checkbox", name="check_complete")
+                  span
+                p.edit-title.title Type Something Here...
+              .funcs
+                a.completed(href="#")
+                  i.far.fa-star
+                a.edit(href="#")
+                  i.fas.fa-pencil-alt
+            .sub
+              .calendar
+                i.far.fa-calendar-alt
+                | 5/18
+              i.far.fa-file
+              i.far.fa-comment-dots
+          .inner
+            .task-detail
+              ul
+                li
+                  .input-title
+                    i.far.fa-calendar-alt
+                    p.subtitle Deadline
+                  .inputs
+                    input#date_date(type="date", name="date_date")
+                    input#date_time(type="time", name="date_time")
+                li
+                  .input-title
+                    i.far.fa-file
+                    p.subtitle File
+                  .inputs
+                    label.file
+                      span
+                        i.fas.fa-plus
+                      input#file(type="file", name="file")
+                li
+                  .input-title
+                    i.far.fa-comment-dots
+                    p.subtitle Comment
+                  .inputs
+                    textarea#comments(name="comments", placeholder="Type your memo here...")
+            .btn-block
+              button.cancel(type="reset")
+                i.fas.fa-times
+                | Cancel
+              button.submit(type="submit")
+                i.fas.fa-plus
+                | Save
+        li.completed
+          .outer
+            .pri
+              .inputs
+                label.checkbox
+                  input#check_complete(type="checkbox", name="check_complete", checked)
+                  span
+                p.edit-title.title Type Something Here...
+              .funcs
+                a.completed(href="#")
+                  i.far.fa-star
+                a.edit(href="#")
+                  i.fas.fa-pencil-alt
+            .sub
+              .calendar
+                i.far.fa-calendar-alt
+                | 5/18
+              i.far.fa-file
+              i.far.fa-comment-dots
+          .inner
+            .task-detail
+              ul
+                li
+                  .input-title
+                    i.far.fa-calendar-alt
+                    p.subtitle Deadline
+                  .inputs
+                    input#date_date(type="date", name="date_date")
+                    input#date_time(type="time", name="date_time")
+                li
+                  .input-title
+                    i.far.fa-file
+                    p.subtitle File
+                  .inputs
+                    label.file
+                      span
+                        i.fas.fa-plus
+                      input#file(type="file", name="file")
+                li
+                  .input-title
+                    i.far.fa-comment-dots
+                    p.subtitle Comment
+                  .inputs
+                    textarea#comments(name="comments", placeholder="Type your memo here...")
+            .btn-block
+              button.cancel(type="reset")
+                i.fas.fa-times
+                | Cancel
+              button.submit(type="submit")
+                i.fas.fa-plus
+                | Save
+      p.remaining-tasks
+        span 0
+        |  tasks left
+      p.completed-tasks
+        span 0
+        |  tasks completed

@@ -1,0 +1,129 @@
+input {
+  &[type="checkbox"],
+  &[type="radio"] {
+    appearance: none;
+  }
+  &[type="date"],
+  &[type="time"] {
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+}
+
+textarea {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  height: 120px;
+  color: #c8c8c8;
+}
+
+input, textarea {
+  &::placeholder {
+    color: #c8c8c8;
+  }
+}
+
+label {
+  &.file {
+    display: flex;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: #c8c8c8;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    input {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 32px;
+      height: 32px;
+      color: transparent;
+      visibility: hidden;
+    }
+  }
+}
+
+.checkbox {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: white;
+  position: relative;
+  cursor: pointer;
+  transition: .3s ease;
+  box-shadow: inset 0 0px 5px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  &:hover {
+    background: $yellow-light;
+  }
+  span {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  input:checked {
+    + span {
+      &::after {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 5px;
+        background: $blue-light;
+        transform: rotate(35deg);
+        position: absolute;
+        top: 14px;
+        left: 2px;
+      }
+      &::before {
+        content: "";
+        display: block;
+        width: 80%;
+        height: 5px;
+        background: $blue-light;
+        position: absolute;
+        transform: rotate(-55deg);
+        top: 10px;
+        left: 6px;
+      }
+    }
+  }
+}
+
+.btn-block {
+  display: flex;
+  button {
+    display: block;
+    -webkit-appearance: none;
+    border: 0;
+    font-size: $title;
+    flex-basis: 50%;
+    padding: 12px 0;
+    cursor: pointer;
+    &.submit {
+      background-color: $blue-light;
+      color: white;
+    }
+    &.cancel {
+      color: $red;
+    }
+    svg {
+      margin-right: 10px;
+    }
+    &:first-child {
+      border-bottom-left-radius: 10px;
+    }
+    &:last-child {
+      border-bottom-right-radius: 10px;
+    }
+  }
+}
