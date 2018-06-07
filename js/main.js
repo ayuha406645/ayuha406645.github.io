@@ -22,6 +22,16 @@ $(document).ready(function(){
     $(this).closest('li').toggleClass('completed');
     updateRemaining();
   });
+  $('.major-task').click(function(e){
+    e.preventDefault();
+    $(this).closest('li').toggleClass('important').find('[data-fa-i2svg]');
+    var icon = $(this).find('[data-fa-i2svg]');
+    if (icon.data('prefix') == 'fas') {
+      icon.removeClass('fas').addClass('far');
+    } else {
+      icon.removeClass('far').addClass('fas');
+    }
+  });
   $('header a').click(function(e){
     var tasks = getTasks();
     $(this).closest('li').addClass('active').siblings().removeClass('active');
