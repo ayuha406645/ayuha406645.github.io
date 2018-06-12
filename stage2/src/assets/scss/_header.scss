@@ -1,0 +1,16 @@
+header {
+
+}
+
+@media (max-width: #{$pcrwd-breakpoint + 'px'})
+{
+  header {
+    
+  }
+}
+
+@media (max-width: #{$mblrwd-breakpoint + 'px'}) {
+  header {
+
+  }
+}

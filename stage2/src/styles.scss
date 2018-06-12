@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+@import "assets/scss/_reset.scss";
+@import "assets/scss/_variables.scss"; //所有變數與 functions
+@import "assets/scss/_base.scss"; // 基礎 CSS 檔案
+@import "assets/scss/_keyframes.scss"; // CSS3 Animations
+@import "assets/scss/_icons.scss"; // icons
+@import "assets/scss/_forms.scss"; // btn 定義，包含下拉或其他自訂按鈕
+@import "assets/scss/_forms_pc-mid.scss";
+@import "assets/scss/_forms_mobile.scss";
+@import "assets/scss/_header.scss"; // 網頁 Header 包含 sharebar
+@import "assets/scss/_left.scss"; // 左側選單
+@import "assets/scss/_mobile-menu.scss"; // 行動版選單
+@import "assets/scss/_footer.scss"; // 網頁 Footer
+@import "assets/scss/_master.scss"; // 主要 CSS 撰寫
+@import "assets/scss/_rwd-pc-mid.scss"; // 768 ~ 1280 pc 中間寬度的 rwd
+@import "assets/scss/_rwd-mobile.scss"; // 手機版 768 以下的 rwd
+@import "assets/scss/_public.scss"; // 公共(全域)使用
