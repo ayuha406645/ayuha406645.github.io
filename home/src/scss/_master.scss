@@ -1,0 +1,21 @@
+.index {
+  padding-top: 3em;
+}
+
+.lists {
+  text-align: center;
+  li {
+    margin-bottom: 2em;
+  }
+  a {
+    display: block;
+  }
+  p {
+    font-size: 18px;
+    color: #2f2f2f;
+    &.title {
+      color: #0044ff;
+      font-size: 24px;
+    }
+  }
+}
