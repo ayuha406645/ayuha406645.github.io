@@ -1,5 +1,41 @@
 header {
-
+  background: $violet-deep;
+  color: white;
+  padding: 19px 0;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    width: 300px;
+    font-size: $title2;
+    font-family: Optima-ExtraBlack;
+  }
+  .search-block {
+    font-size: $title;
+    .search-input {
+      border-bottom: 1px solid white;
+      width: 388px;
+      display: flex;
+      align-items: center;
+      line-height: 2;
+      input {
+        width: 100%;
+        font-size: $title;
+        margin-left: 15px;
+        background: transparent;
+        border: 0;
+        outline: none;
+        color: white;
+        &::placeholder {
+          color: white;
+          opacity: .5;
+          font-style: italic;
+          font-size: $subtitle;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: #{$pcrwd-breakpoint + 'px'})
