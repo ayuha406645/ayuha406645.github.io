@@ -1,3 +1,137 @@
+
 aside {
-  
+  padding: 0 20px;
+  width: 320px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  > ul {
+    > li {
+      background: #ebebeb;
+      border-bottom: 3px solid #d7d7d7;
+      padding: 25px 40px;
+      .title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 2;
+      }
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  section {
+    padding: 20px;
+    .filters-block {
+      p {
+        font-size: $title;
+        span {
+          color: $violet-deep;
+        }
+      }
+    }
+    .filters {
+      display: flex;
+      margin: .5em 0 2em;
+      li {
+        border-radius: 34px / 100%;
+        border: 1px solid $violet;
+        color: $violet;
+        padding: 0 20px;
+        line-height: 2;
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      span {
+        margin-right: 15px;
+      }
+      .remove {
+        width: 14px;
+        height: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $violet;
+        border-radius: 50%;
+        position: relative;
+        &::before, &::after {
+          content: "";
+          display: block;
+          width: 80%;
+          height: 1px;
+          background: $violet;
+          transform: rotate(45deg);
+          position: absolute;
+          top: 50%;
+        }
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+article {
+  display: flex;
+  background: white;
+  figure {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+  }
+  .article-block {
+    padding: 20px;
+  }
+  .name {
+    font-size: $title;
+    color: $violet;
+    font-weight: bold;
+  }
+  .description {
+    font-size: $paragraph;
+    height: 50px;
+    overflow: hidden;
+    text-align: justify;
+  }
+  .misc {
+    font-size: $remark;
+    display: flex;
+    align-items: center;
+    .author {
+      font-weight: bold;
+      margin-right: 1em;
+    }
+    .category {
+      background: $gray;
+      border-radius: 24px / 24px;
+      color: white;
+      font-style: italic;
+      padding: 0 1em;
+    }
+  }
+  .meta {
+    font-size: $remark;
+    display: flex;
+    align-items: center;
+    .fa {
+      margin-right: .5em;
+    }
+    span {
+      color: $gray-deep;
+    }
+    .location {
+      margin-right: 1em;
+    }
+  }
 }

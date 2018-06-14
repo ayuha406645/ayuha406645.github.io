@@ -47,5 +47,13 @@
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1"
-  }
+  },
+  "browserslist": [
+    "last 4 versions",
+    "ie >= 11",
+    "iOS >= 8",
+    "Android >= 4",
+    "Chrome >= 30",
+    "Firefox >= 30"
+  ]
 }

@@ -27,6 +27,11 @@ a {
   color: #c80f23;
 }
 
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 .forced-scrollbar {  //only chrome worked
   &::-webkit-scrollbar {
     -webkit-appearance: none;
