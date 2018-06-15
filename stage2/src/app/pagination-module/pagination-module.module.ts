@@ -12,6 +12,9 @@ import { PaginationModuleComponent } from "./pagination-module.component";
   ],
   exports: [
     PaginationModuleComponent
+  ],
+  schemas: [
+    PaginationModuleComponent
   ]
 })
 export class PaginationModuleModule { }

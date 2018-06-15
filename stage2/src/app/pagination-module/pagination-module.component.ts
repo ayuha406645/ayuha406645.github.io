@@ -7,11 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PaginationModuleComponent implements OnInit {
 
-  @Input()
-  total: number;
+  @Input() total: number;
   
-  @Input()
-  limit: number;
+  @Input() limit: number;
 
   totalPage: number;
 

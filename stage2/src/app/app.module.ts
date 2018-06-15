@@ -7,20 +7,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ArticleComponent } from './article/article.component';
-import { PaginationModuleComponent } from './pagination-module/pagination-module.component';
+import { PaginationModuleModule } from "./pagination-module/pagination-module.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ArticleComponent,
-    PaginationModuleComponent
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    PaginationModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
