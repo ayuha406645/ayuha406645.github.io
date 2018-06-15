@@ -8,7 +8,7 @@ aside {
     > li {
       background: #ebebeb;
       border-bottom: 3px solid #d7d7d7;
-      padding: 25px 40px;
+      padding: 25px 30px;
       .title {
         font-weight: bold;
         font-size: 20px;
@@ -80,6 +80,7 @@ main {
 article {
   display: flex;
   background: white;
+  margin-bottom: 2em;
   figure {
     width: 220px;
     height: 220px;
@@ -92,6 +93,9 @@ article {
   }
   .article-block {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .name {
     font-size: $title;
@@ -103,6 +107,21 @@ article {
     height: 50px;
     overflow: hidden;
     text-align: justify;
+    position: relative;
+    &::after {
+      content: "...";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding-left: 1em;
+      display: inline-block;
+
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+50,1+100 */
+      background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    }
   }
   .misc {
     font-size: $remark;
@@ -133,5 +152,33 @@ article {
     .location {
       margin-right: 1em;
     }
+  }
+}
+
+.pagination {
+  a {
+    color: $violet;
+  }
+  .page-item {
+    margin: 0 1px;
+    &.active {
+      .page-link {
+        background-color: $violet;
+        border-color: transparent;
+      }
+    }
+    &:hover {
+      .page-link {
+        color: $violet;
+      }
+      &.active {
+        .page-link {
+          color: white;
+        }
+      }
+    }
+  }
+  .page-link {
+    border-color: transparent;
   }
 }
