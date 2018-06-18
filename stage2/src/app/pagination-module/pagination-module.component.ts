@@ -11,10 +11,13 @@ export class PaginationModuleComponent implements OnInit {
   
   @Input() limit: number;
 
+  @Input() currentPage: number;
+
   totalPage: number;
 
   constructor() {
     this.limit = 10;
+    this.currentPage = 1;
   }
 
   ngOnInit() {

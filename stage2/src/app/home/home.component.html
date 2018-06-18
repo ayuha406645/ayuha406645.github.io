@@ -1,5 +1,5 @@
 <div class="filters-block">
-  <p>Showing <span>15</span> results by...</p>
+  <p>Showing <span>{{total}}</span> results by...</p>
   <ul class="filters">
     <li>
       <span>Kaoshiung</span>
@@ -13,12 +13,12 @@
 </div>
 <ul class="content-lists">
   
-  <li class="article" *ngFor="let item of article_datas">
+  <li class="article" *ngFor="let item of article_datas; let i = index;">
     <figure>
       <img src="{{item.Picture1}}" alt="{{item.Name}}">
     </figure>
     <div class="article-block">
-      <a [routerLink]="['article', item.Id]" class="name" data-key="Name">{{item.Name}}</a>
+      <a [routerLink]="['article', i + 1]" class="name" data-key="Name">{{item.Name}}</a>
       <div class="description" data-key="Description">{{item.Description}}</div>
       <div class="misc">
         <div class="author">{{item.Opentime}}</div>
