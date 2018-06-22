@@ -1,0 +1,31 @@
+body {
+  font-size: 100%;
+  font-family: $font-family;
+  color: #474747;
+  line-height: 1.5;
+}
+
+a {
+  color: #2f2f2f;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.red {
+  color: #c80f23;
+}
+
+.forced-scrollbar {  //only chrome worked
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.4);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+  }
+}

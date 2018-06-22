@@ -1,0 +1,57 @@
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+@mixin animation ($stuff) {
+    -webkit-animation: $stuff;
+    animation: $stuff;
+}
+
+@include keyframes(dot-collpase) {
+  0% {
+    width: 0;
+    height: 0;
+    border-width: 17px;
+  }
+  100% {
+    width: 34px;
+    height: 34px;
+    border-width: 8px;
+  }
+}
+
+@media (max-width: #{$pcrwd-breakpoint + 'px'}) {
+  @include keyframes(dot-collpase) {
+    0% {
+      width: 0;
+      height: 0;
+      border-width: vw(17px);
+    }
+    100% {
+      width: vw(34px);
+      height: vw(34px);
+      border-width: vw(8px);
+    }
+  }
+}
+
+
+@media (max-width: #{$mblrwd-breakpoint + 'px'}) {
+  @include keyframes(dot-collpase) {
+    0% {
+      width: 0;
+      height: 0;
+      border-width: vwm(20px);
+    }
+    100% {
+      width: vwm(40px);
+      height: vwm(40px);
+      border-width: vwm(8px);
+    }
+  }
+}
