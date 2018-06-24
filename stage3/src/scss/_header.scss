@@ -1,0 +1,35 @@
+header {
+  background: black;
+  color: white;
+  line-height: 3;
+  .row {
+    margin: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+  .menu {
+    ul {
+      margin-bottom: 0;
+    }
+    li {
+      border-bottom: 4px solid transparent;
+      &.active {
+        border-color: white;
+      }
+    }
+    a {
+      display: block;
+      text-align: center;
+    }
+  }
+  .admin {
+    text-align: right;
+  }
+}

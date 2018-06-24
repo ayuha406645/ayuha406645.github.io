@@ -2,6 +2,135 @@ extends _layout.pug
 
 block content
   .container
+    .row.overview
+      .col.he
+        b.b-title OVERVIEW
+        p 2018/6/6 1028/6/13 Weekly
+    .row.overview
+      .col.revenue
+        .in
+          .title
+            b.b-title 
+              i.fas.fa-hand-holding-usd
+              | TOTAL REVENUE
+          strong.digit 54,540
+      .col.cost
+        .in
+          .title
+            b.b-title 
+              i.fas.fa-dollar-sign
+              | TOTAL COST
+          strong.digit 54,540
+      .col.income
+        .in
+          .title
+            b.b-title
+              i.fas.fa-money-bill
+              | NET INCOME
+          strong.digit 54,540
+    .row.activity
+      .col
+        .in
+          b.b-title Activity
+          .charts
+            img(src="images/chart.png", alt="")
+    .row
+      .col.transaction
+        .in
+          b.b-title Transaction Website
+          ul.d-block
+            li.row
+              .col-1.icon
+                i.fab.fa-facebook
+              .col.sub-title
+                | Facebook.com
+              .col-2.vals
+                | 45,836
+              .col-2.flag.increase
+                i.fas.fa-arrow-up
+                span 20%
+            li.row
+              .col-1.icon
+                i.fab.fa-google
+              .col.sub-title
+                | google.com
+              .col-2.vals
+                | 45,836
+              .col-2.flag.increase
+                i.fas.fa-arrow-up
+                span 20%
+            li.row
+              .col-1.icon
+                i.fas.fa-shopping-bag
+              .col.sub-title
+                | Sgopfiy.com
+              .col-2.vals
+                | 45,836
+              .col-2.flag.decrease
+                i.fas.fa-arrow-down
+                span 20%
+            li.row
+              .col-1.icon
+                i.fab.fa-wordpress
+              .col.sub-title
+                | Wordpress.com
+              .col-2.vals
+                | 45,836
+              .col-2.flag.decrease
+                i.fas.fa-arrow-down
+                span 20%
+      .col.order
+        .in
+          b.b-title Latest Orders
+          ul.d-block
+            li.row
+              .col-4.img
+                img(src="https://fakeimg.pl/100/", alt="")
+              .col.desc
+                b.s-title Vintage T-shirt
+                p.time 
+                  i.fas.fa-clock
+                  | 2018/6/13 13:42
+                p.man
+                  i.fas.fa-male
+                  | Belle Wills
+              .col-2.total
+                div
+                  small Total
+                  br
+                  b 3,200
+            li.row
+              .col-4.img
+                img(src="https://fakeimg.pl/100/", alt="")
+              .col.desc
+                b.s-title Vintage T-shirt
+                p.time 
+                  i.fas.fa-clock
+                  | 2018/6/13 13:42
+                p.man
+                  i.fas.fa-male
+                  | Belle Wills
+              .col-2.total
+                div
+                  small Total
+                  br
+                  b 3,200
+            li.row
+              .col-4.img
+                img(src="https://fakeimg.pl/100/", alt="")
+              .col.desc
+                b.s-title Vintage T-shirt
+                p.time 
+                  i.fas.fa-clock
+                  | 2018/6/13 13:42
+                p.man
+                  i.fas.fa-male
+                  | Belle Wills
+              .col-2.total
+                div
+                  small Total
+                  br
+                  b 3,200
 
 block script
   

@@ -1,0 +1,145 @@
+.b-title {
+  font-size: $title24;
+  font-weight: bold;
+}
+.in {
+  background: white;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,.1);
+}
+.row {
+  margin: 15px 0;
+}
+.in {
+  padding: 30px 40px;
+  height: 100%;
+}
+.overview {
+  p {
+    font-size: $remake;
+    color: #9b9b9b;
+  }
+  .col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    .digit {
+      font-size: 36px;
+      font-weight: bold;
+    }
+    &.he {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+  }
+  .revenue {
+    .digit {
+      color: #7ED321;
+    }
+  }
+  .cost {
+    .digit {
+      color: #D0021B;
+    }
+  }
+  .income {
+    .digit {
+      color: #4A90E2;
+    }
+  }
+}
+.activity {
+  .charts {
+    margin-top: 30px;
+  }
+}
+.transaction {
+  .icon {
+    font-size: 45px;
+    margin-right: 15px;
+  }
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ebebeb;
+      padding: 15px 0;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+  .sub-title {
+    color: #9b9b9b;
+  }
+  .vals {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .flag {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    svg {
+      margin-right: 5px;
+      font-size: 20px;
+    }
+    &.increase {
+      color: #73d321
+    }
+    &.decrease {
+      color: #d0021b;
+    }
+  }
+}
+.order {
+  .img {
+    width: 130px;
+    flex-basis: 130px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 0;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0;
+    .s-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    svg {
+      margin-right: 5px;
+    }
+    .time {
+      color: #9b9b9b;
+    }
+    .man {
+      color: #9b9b9b;
+    }
+  }
+  .total {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    text-align: right;
+    padding: 10px 0;
+    align-self: flex-end;
+    small {
+      font-size: 14px;
+    }
+    b {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
